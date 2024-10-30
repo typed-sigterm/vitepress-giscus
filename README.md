@@ -4,7 +4,7 @@ Out-of-the-box Giscus support for VitePress.
 
 ## Usage
 
-See [documentation](https://vuepress-giscus.by-ts.top/).
+See [documentation](https://vitepress-giscus.by-ts.top/).
 
 ## Credits
 

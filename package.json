@@ -6,7 +6,7 @@
   "description": "Out-of-the-box Giscus support for VitePress",
   "author": "Typed SIGTERM",
   "license": "MIT",
-  "homepage": "https://vuepress-giscus.by-ts.top",
+  "homepage": "https://vitepress-giscus.by-ts.top",
   "keywords": [
     "vitepress",
     "vitepress-plugin",

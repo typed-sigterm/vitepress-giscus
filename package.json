@@ -17,6 +17,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
     "build": "vite build",
     "docs:dev": "vitepress dev docs",

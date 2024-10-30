@@ -33,7 +33,7 @@ jobs:
       - run: pnpm i
       - run: pnpm build
 
-      - run: npm config set '//registry.npmjs.com/:_authToken' "${NODE_AUTH_TOKEN}"
+      - run: npm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
       - run: pnpm publish --provenance --access=public --no-git-checks

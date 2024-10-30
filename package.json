@@ -7,6 +7,9 @@
   "author": "Typed SIGTERM",
   "license": "MIT",
   "homepage": "https://vitepress-giscus.by-ts.top",
+  "repository": {
+    "url": "https://github.com/typed-sigterm/vitepress-giscus"
+  },
   "keywords": [
     "vitepress",
     "vitepress-plugin",

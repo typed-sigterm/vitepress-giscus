@@ -2,6 +2,10 @@
 
 Out-of-the-box Giscus support for VitePress.
 
+- 📦 Ready-to-work
+- ✅ Optimized for VitePress
+- 🛠️ Customizable
+
 ## Usage
 
 See [documentation](https://vitepress-giscus.by-ts.top/).

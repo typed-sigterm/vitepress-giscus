@@ -1,9 +1,9 @@
 {
   "name": "vitepress-giscus",
   "type": "module",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "packageManager": "pnpm@9.12.3",
-  "description": "Out-of-the-box Giscus support for VitePress",
+  "description": "Out-of-the-box Giscus support for VitePress.",
   "author": "Typed SIGTERM",
   "license": "MIT",
   "homepage": "https://vitepress-giscus.by-ts.top",

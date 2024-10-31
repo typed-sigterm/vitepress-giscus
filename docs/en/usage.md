@@ -81,7 +81,7 @@ The text below will describe that `<VPGiscus>` has special handling for these pr
 
 :::
 
-## Reactive props
+## Reactive Props
 
 All props of `<VPGiscus>` can be reactive.
 

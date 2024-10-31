@@ -1,6 +1,6 @@
-# Usage
+# Getting Started
 
-Let's cut to the chase and start by installing `vitepress-giscus`:
+Let's cut to the chase and install `vitepress-giscus` first:
 
 ::: code-group
 
@@ -26,7 +26,7 @@ bun add -D vitepress-giscus
 
 :::
 
-Next, create the following files in the `.vitepress/theme` directory of your VitePress site:
+In your VitePress site's `.vitepress/theme` directory, create the following files:
 
 ::: code-group
 
@@ -70,8 +70,44 @@ const { Layout } = DefaultTheme;
 
 :::
 
-That's it. For Giscus configuration, please refer to the [official website](https://giscus.app/).
+You're done. For Giscus configuration, please refer to the [official website](https://giscus.app/).
 
-It is recommended **not** to specify `giscus.lang` in the props, as the component will automatically handle the UI language of Giscus and responsive switching.
+::: tip Recommended to omit the following properties from the `giscus` prop
 
-All props of `<VPGiscus>` can be reactive. However, when props change (including the responsive UI language switching mentioned above), the component will fully re-render, causing the comment input box to be cleared.
+- `lang`
+- `theme`
+
+The text below will describe that `<VPGiscus>` has special handling for these properties, and explicitly passing these properties will override the automatic optimization.
+
+:::
+
+## Reactive props
+
+All props of `<VPGiscus>` can be reactive.
+
+::: warning
+
+When props change, the component will fully re-render, the comment input box will be cleared, and users will lose any unposted comment content.
+
+:::
+
+## I18n
+
+If `giscus.lang` is not specified, `<VPGiscus>` will automatically handle Giscus's UI language and reactive switching.
+
+You can also set `:auto-detect-lang="false"` to disable automatic handling.
+
+When users switch languages, the component will re-render.
+
+## Dark Mode
+
+You can pass the `theme` prop to control Giscus's UI style:
+
+```vue
+<VPGiscus theme="purple_dark" />
+<VPGiscus :theme="{ light: 'light_high_contrast', dark: 'dark_high_contrast' }" />
+```
+
+The possible values for `theme` can be found on the [official website](https://giscus.app/).
+
+When users enable or disable dark mode, the component will re-render.

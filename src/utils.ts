@@ -1,4 +1,4 @@
-import type { AvailableLanguage, GiscusProps } from '@giscus/vue';
+import type { AvailableLanguage, GiscusProps, Theme } from '@giscus/vue';
 
 export interface VPGiscusProps {
   /**
@@ -13,6 +13,15 @@ export interface VPGiscusProps {
    * @default true
    */
   autoDetectLang?: boolean
+  /**
+   * The theme of Giscus.
+   *
+   * @default { light: 'light', dark: 'dark' }
+   */
+  theme?: Theme | {
+    light: Theme
+    dark: Theme
+  }
 }
 
 /**

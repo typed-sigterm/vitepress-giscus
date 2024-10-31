@@ -12,7 +12,7 @@ hero:
       text: Getting started
       link: /en/usage
     - theme: alt
-      text: GitHub
+      text: View on GitHub
       link: https://github.com/typed-sigterm/vitepress-giscus
 ---
 

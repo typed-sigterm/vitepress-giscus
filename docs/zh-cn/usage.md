@@ -72,6 +72,42 @@ const { Layout } = DefaultTheme;
 
 完成。Giscus 配置请参考[官网](https://giscus.app/)。
 
-推荐**不要**在 props 中指定 `giscus.lang`，组件会自动处理 Giscus 的 UI 语言和响应式切换。
+::: tip 推荐在 `giscus` prop 中去除以下属性
 
-`<VPGiscus>` 所有的 props 都可以是响应式的。但当 props 有变更时（包括上文提到的 UI 语言响应式切换），组件会完全重新渲染，导致评论输入框清空。
+- `lang`
+- `theme`
+
+下文会描述，`<VPGiscus>` 有对这些属性的特殊处理，而显式传入这些属性会覆盖自动优化。
+
+:::
+
+## 响应式 props
+
+`<VPGiscus>` 所有的 props 都可以是响应式的。
+
+::: warning
+
+当 props 有变更时，组件会完全重新渲染，评论输入框将清空，用户将丢失未发布的评论内容。
+
+:::
+
+## 国际化
+
+不指定 `giscus.lang` 的情况下，`<VPGiscus>` 默认会自动处理 Giscus 的 UI 语言和响应式切换。
+
+你也可以设置 `:auto-detect-lang="false"` 来禁用自动处理。
+
+用户切换语言时，组件会重新渲染。
+
+## 深色模式
+
+你可以传入 `theme` prop 来控制 Giscus 的 UI 风格：
+
+```vue
+<VPGiscus theme="purple_dark" />
+<VPGiscus :theme="{ light: 'light_high_contrast', dark: 'dark_high_contrast' }" />
+```
+
+`theme` 的可选值可以在[官网](https://giscus.app/)找到。
+
+用户打开或关闭深色模式时，组件会重新渲染。

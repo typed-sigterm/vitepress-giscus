@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import DefaultTheme from 'vitepress/theme';
-import { VPGiscus } from '../../../src';
+import Comments from './Comments.vue';
 
 const { Layout } = DefaultTheme;
 </script>
@@ -8,16 +8,7 @@ const { Layout } = DefaultTheme;
 <template>
   <Layout>
     <template #doc-after>
-      <VPGiscus
-        :giscus="{
-          repo: 'typed-sigterm/vitepress-giscus',
-          repoId: 'R_kgDONGOIig',
-          category: 'Comments',
-          categoryId: 'DIC_kwDONGOIis4CjtsS',
-          mapping: 'pathname',
-          strict: '1',
-        }"
-      />
+      <Comments />
     </template>
   </Layout>
 </template>

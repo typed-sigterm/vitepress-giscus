@@ -14,6 +14,14 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/typed-sigterm/vitepress-giscus
+features:
+  - icon: 📦
+    title: Out-of-the-box
+  - icon:
+      src: /vitepress.svg
+    title: Customized for VitePress
+  - icon: 🛠️
+    title: Configurable
 ---
 
 <script lang="ts" setup>

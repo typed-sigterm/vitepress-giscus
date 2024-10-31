@@ -14,6 +14,15 @@ hero:
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/typed-sigterm/vitepress-giscus
+
+features:
+  - icon: 📦
+    title: 开箱即用
+  - icon:
+      src: /vitepress.svg
+    title: 为 VitePress 定制
+  - icon: 🛠️
+    title: 可配置
 ---
 
 <script lang="ts" setup>

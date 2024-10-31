@@ -1,7 +1,11 @@
+.comments-demo {
+  display: block;
+  padding-top: 12px;
+}
+
 @media (min-width: 960px) {
   .comments-demo {
     width: 60vw;
-    display: block;
     margin: 0 auto;
   }
 }

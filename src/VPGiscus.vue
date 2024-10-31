@@ -13,8 +13,8 @@ const vpData = useData();
 
 const mergedProps = computed(() => {
   return {
-    ...props.giscus,
     lang: getGiscusLanguage(props.giscus.lang ?? vpData.lang.value),
+    ...props.giscus,
   };
 });
 watch(mergedProps, forceUpdate, { deep: true });

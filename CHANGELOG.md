@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 (2024-11-06)
+
+### 🩹 Fixes
+
+- Make it work. Surprisingly, before this version, it can only work through local builds.
+
 ## 1.0.0 (2024-10-31)
 
 ### 🚀 Features

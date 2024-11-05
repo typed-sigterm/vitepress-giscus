@@ -1,6 +1,7 @@
-import vue from '@vitejs/plugin-vue';
+import pluginVue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
+import pluginDts from 'vite-plugin-dts';
+import { dependencies, peerDependencies } from './package.json';
 
 export default defineConfig({
   build: {
@@ -9,12 +10,19 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['@siteData', 'vitepress', 'vue'],
+      external: [
+        '@siteData',
+        ...Object.keys(dependencies),
+        ...Object.keys(peerDependencies),
+      ],
       output: {
         entryFileNames: 'index.js',
       },
     },
     target: 'esnext',
   },
-  plugins: [vue(), dts()],
+  plugins: [
+    pluginVue(),
+    pluginDts(),
+  ],
 });

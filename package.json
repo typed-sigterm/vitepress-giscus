@@ -20,9 +20,6 @@
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": "20"
-  },
   "scripts": {
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
@@ -34,7 +31,7 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "vitepress": "^1.4.1"
+    "vitepress": "^1.4.5"
   },
   "dependencies": {
     "@giscus/vue": "^3.0.0",

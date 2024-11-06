@@ -8,6 +8,9 @@ export default defineConfig({
     server: {
       port: 7118,
     },
+    ssr: {
+      noExternal: ['vitepress-giscus'], // This is IMPORTANT
+    },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

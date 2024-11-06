@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 (2024-11-06)
+
+### 📖 Documentation
+
+- Add `vite.ssr.noExternal` configuration explanation
+
 ## 1.0.1 (2024-11-06)
 
 ### 🩹 Fixes

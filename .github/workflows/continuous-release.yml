@@ -9,7 +9,8 @@ permissions:
   contents: read
 
 jobs:
-  release:
+  publish:
+    name: Publish to pkg.pr.new
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, '[cr publish]')
     steps:

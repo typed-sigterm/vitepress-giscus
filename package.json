@@ -28,6 +28,7 @@
     "example:dev": "vitepress dev example",
     "example:build": "vitepress build example",
     "example:preview": "vitepress preview example",
+    "lint": "eslint .",
     "prepare": "husky"
   },
   "peerDependencies": {

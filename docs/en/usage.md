@@ -70,7 +70,21 @@ const { Layout } = DefaultTheme;
 
 :::
 
-You're done. For Giscus configuration, please refer to the [official website](https://giscus.app/).
+Then, add a line of configuration to `.vitepress/config.ts`:
+
+```ts
+import { defineConfig } from 'vitepress';
+
+export default defineConfig({
+  vite: {
+    ssr: {
+      noExternal: ['vitepress-giscus'], // [!code ++]
+    },
+  },
+});
+```
+
+You're all set! For Giscus configuration, please refer to the [official website](https://giscus.app/).
 
 ::: tip Recommended to omit the following properties from the `giscus` prop
 

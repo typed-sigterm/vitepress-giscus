@@ -8,7 +8,7 @@
 
 ## 1.0.1 (2024-11-06)
 
-### 🩹 Fixes
+### 🩹 Bug Fixes
 
 - Make it work. Surprisingly, before this version, it can only work through local builds.
 
@@ -19,7 +19,7 @@
 - Add `theme` prop for easier theme switching
 - Add `reload` event
 
-### 🩹 Fixes
+### 🩹 Bug Fixes
 
 - Fix dark mode not syncing with VitePress
 

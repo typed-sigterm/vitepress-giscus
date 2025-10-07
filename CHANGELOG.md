@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3 (2025-10-08)
+
+*No significant changes*
+
 ## 1.0.2 (2024-11-06)
 
 ### 📖 Documentation

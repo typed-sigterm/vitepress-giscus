@@ -1,7 +1,7 @@
 import pluginVue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 import pluginDts from 'vite-plugin-dts';
-import { dependencies, peerDependencies } from './package.json';
+import { dependencies, peerDependencies } from './package.json' with { type: 'json' };
 
 export default defineConfig({
   build: {
@@ -9,7 +9,7 @@ export default defineConfig({
       entry: 'src/index.ts',
       formats: ['es'],
     },
-    rollupOptions: {
+    rolldownOptions: {
       external: [
         '@siteData',
         ...Object.keys(dependencies),

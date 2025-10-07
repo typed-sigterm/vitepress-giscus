@@ -1,4 +1,4 @@
-# VitePress Giscus
+# VitePress Giscus ![Latest version](https://img.shields.io/github/v/release/typed-sigterm/vitepress-giscus) ![License](https://img.shields.io/github/license/typed-sigterm/vitepress-giscus) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fvitepress-giscus%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/vitepress-giscus)](https://github.com/typed-sigterm/vitepress-giscus)
 
 Out-of-the-box Giscus support for VitePress.
 
